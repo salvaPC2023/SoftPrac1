@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    background-color: #131313;
+}
+image{ /*PP MUSIC*/
+    width: 150px;
+    height: 40px;
+}
+.letra-raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.letra-fjalla{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.letra-roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.Inicio{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/about-me-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.nav-links {
+    float: right;
+}
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 70px;
+
+    font-size: 18px;
+    padding:10px;
+}
+.nav-links li a:hover {
+    color: #f3c242;
+}
+.text1{
+    color: #f3c242;
+    font-size: 90px;
+}
+.text2{
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+.main-navigation input{
+    display: none;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#caja{
+    font-size: 30px;
+    color: #f3c242;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    #caja{
+        display: block;
+    }
+    #menu{
+        display: none;
+    }
+    #navegacion:checked ~ #menu {
+        display: block;
+    }
+    .text1{
+        width: 90%
+    }
+    .main-navigation{
+        width: 90%;
+    }
+    .nav-links {
+        position: relative;
+        background-color: black;
+    }
+}
+
+
+.acercademi{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 100px;
+    gap: 10px;
+    max-width: 575px;
+}
+.txt1{
+    color: #f3c242;
+    font-size: 40px;
+}
+.txt2{
+    color: #fff;
+    font-size: 15px;
+}
+#imagen{
+    width: 40%;
+}
+@media (max-width: 768px) {
+    .acercademi{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .texto{
+        padding-left: 0px;
+    }
+}
+
+.Experiencia{
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/professional-experience.jpg);
+    width: 100%;
+    font-size: 60px;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Experiencia .prof{
+    color: #f3c242;
+    font-size: 60px;
+}
+
+.guitarra{
+    padding: 100px 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bandas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+}
+.bandas .peli1{
+    display: flex;
+    justify-content: flex-start;
+}
+.bandas .peli1 img{
+    width: 40%;
+}
+.bandas .peli2{
+    display: flex;
+    justify-content: flex-end;
+}
+.bandas .peli2 img{
+    width: 40%;
+}
+.actuacion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    padding: 5px;
+}
+.alinear{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.bd1{
+    color: #f3c242;
+    font-size: 24px;
+}
+.actuacion ul li{
+    padding-top: 15px;
+}
+#imagen2{
+    width: 10%;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+    .guitarra{
+        flex-direction: column;
+    }
+    .bandas .peli1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bandas .peli1 img{
+        width: 90%;
+    }
+    .bandas .peli2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bandas .peli2 img{
+        width: 90%;
+    }
+    #imagen2{
+        width: 50%;
+    }
+}
+
+.Premiosdeanios{
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/awards.jpg);
+    width: 100%;
+    font-size: 60px;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Premiosdeanios .prof{
+    color: #f3c242;
+    font-size: 60px;
+}
+
+.Premios{
+    padding: 100px 0px 100px;
+    display: flex;
+    justify-content: center;
+}
+.Prestigio{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Prestigio img{
+    max-width: 180px;
+}
+.Carrera{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Carrera img{
+    width: 30%;
+}
+.Carrera .imags{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 768px) {
+    .Premios{
+        flex-direction: column;
+        align-items: center ;
+        padding: 30px;
+    }
+    .Prestigio{
+        width: 100%;
+    }
+    .Carrera{
+        width: 100%;
+    }
+    .Carrera .imags{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px
+    }
+    .Carrera img{
+        width: 55%;
+    }
+}
+
+.nuevoeventos{
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/events.jpg);
+    width: 100%;
+    font-size: 60px;
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevoeventos .prof{
+    color: #f3c242;
+    font-size: 60px;
+}
+
+.Turismo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #131313;
+}
+.Turismo .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.Tickets{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    margin: 0px 95px 30px;
+}
+.alinear{
+    align-content: center;
+}
+.turis1{
+    justify-content: center;
+    align-content: flex-end;
+    color: #f3c242;
+    font-size: 36px;
+}
+.turis2{
+    color: #fff;
+    font-size: 24px;
+    gap: 5px;
+}
+@media (max-width: 768px) {
+    .Tickets{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 30px 30px;
+    }
+}
+
+/*OCTAVA PARTE*/
+.present{
+    color: #f3c242;
+    font-size: 36px;
+}
+.present2{
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 50px;
+}
+.Boton1 {
+    color: #f3c242;
+    display: inline-flex;
+    border-style: solid;
+    border: 2px 2px;
+    padding: 12px 30px;
+}
+
+
+
+/*NOVENA PARTE*/
+.Musica{
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.division1{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 219px;
+}
+.Titulos{
+    color: #f3c242;
+    font-size: 21px;
+}
+
+/*DECIMA PARTE*/
+.contactos{
+    background-color: #131313;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactos svg{
+    width: 21px;
+}
+.contactos .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.contactos .menu a{
+    color: #f3c242;
+    font-size: 15px;
+}
+.contactos .redes-sociales2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    fill: #f3c242;
+}
+
+/*ULTIMA PARTE CRJO*/
+.copyright {
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    position: relative; /* Agregamos posición relativa para poder posicionar la línea */
+}
+.copyright::before {
+    content: ""; /* Agregamos un pseudo-elemento para crear la línea */
+    position: absolute;
+    top: 0; /* Posicionamos la línea en la parte superior */
+    left: 0;
+    width: 100%; /* Ancho completo del div */
+    height: 1px; /* Grosor de la línea */
+    background-color: #f3c242; /* Color de la línea */
+}
+.copyright p {
+    padding: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin: 0; /* Quitamos el margen para que no haya espacio extra */
+}

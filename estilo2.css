@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+    background-color: #131313;
+}
+image{ /*PP MUSIC*/
+    width: 150px;
+    height: 40px;
+}
+.letra-raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.letra-fjalla{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.letra-roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.Inicio{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/about-me-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.nav-links {
+    float: right;
+}
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 70px;
+
+    font-size: 18px;
+    padding:20px;
+}
+.nav-links li a:hover {
+    color: #f3c242;
+}
+.text1{
+    color: #f3c242;
+    font-size: 90px;
+}
+.text2{
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.Evento{
+    padding: 150px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.Evento img{
+    width: 25%;
+}
+.Evento .alinear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event1{
+    color: #f3c242;
+    font-size: 40px;
+}
+.event2{
+    color: #f3c242;
+    font-size: 24px;
+}
+.event3{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.Eventos{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.funciones{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.Funcion{
+    padding: 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    gap: 30px;
+}
+@media (max-width: 768px) {
+    .Eventos{
+        flex-direction: column;
+    }
+    .Funcion{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.fondo-oscuro{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.Tickets{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/events.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buy{
+    color: #f3c242;
+    font-size: 70px;
+}
+.Boton1 {
+    color: #f3c242;
+    display: inline-flex;
+    border-style: solid;
+    border: 2px 2px;
+    padding: 12px 30px;
+}
+@media (max-width: 768px) {
+    .buy{
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+.contactos{
+    background-color: #131313;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactos svg{
+    width: 21px;
+}
+.contactos .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.contactos .menu a{
+    color: #f3c242;
+    font-size: 15px;
+}
+.contactos .redes-sociales2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    fill: #f3c242;
+}
+
+.Musica{
+    padding-top: 50px;
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.division1{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 219px;
+}
+.Titulos{
+    color: #f3c242;
+    font-size: 21px;
+}
+
+/*ULTIMA PARTE CRJO*/
+.copyright {
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    position: relative; /* Agregamos posición relativa para poder posicionar la línea */
+}
+.copyright::before {
+    content: ""; /* Agregamos un pseudo-elemento para crear la línea */
+    position: absolute;
+    top: 0; /* Posicionamos la línea en la parte superior */
+    left: 0;
+    width: 100%; /* Ancho completo del div */
+    height: 1px; /* Grosor de la línea */
+    background-color: #f3c242; /* Color de la línea */
+}
+.copyright p {
+    padding: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin: 0; /* Quitamos el margen para que no haya espacio extra */
+}

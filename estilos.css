@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+.letra-raleway{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.letra-fjalla{
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.letra-roboto-slab {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+image{ /*PP MUSIC*/
+    width: 150px;
+    height: 40px;
+}
+
+/*PRIMERA PARTE*/
+.Guitarrista {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/hero-section-min.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1045px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    padding-bottom: 250px;
+}
+.nav-links {
+    float: right;
+    position:relative;
+}
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+.nav-links li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 70px;
+
+    font-size: 18px;
+    padding:20px;
+    display:block;
+}
+.nav-links li a:hover {
+    color: #f3c242;
+}
+.Inicio{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.Inicio1 {
+    font-size: 24px;
+    color: #f3c242;
+}
+h1 {
+    font-size: 90px;
+    color: #fff;
+}
+.EntornoBoton1 {
+    padding: 50px 0px 0px;
+}
+.Boton1 {
+    color: #f3c242;
+    display: inline-flex;
+    border-style: solid;
+    border: 2px 2px;
+    padding: 12px 30px;
+}
+.redes-sociales{
+    padding: 70px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+#icono{
+    width: 30px;
+    height: 30px;
+    background-color: #f3c242;
+    border-radius: 50%; /* Esto hace que el div tenga forma de círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#icono svg{
+    width: 50%;
+}
+
+.icono{
+    max-width: 40px;
+    position:relative;
+    display: none;
+}
+@media (max-width: 850px) {
+    .Guitarrista {
+        min-height: 600px;
+        align-items:flex-start;
+    }
+    .icono{
+        display: initial;
+        cursor: pointer;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+    }
+    .nav-links ul li {
+        display: flex;
+        position: relative;
+        float: left;
+    }
+
+    .Inicio{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .main-navigation{
+        width: 100%;
+        overflow:auto;
+        padding-bottom: 100px;
+    }
+    #menu:checked ~ .main-navigation .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #333; /* Color de fondo para distinguir */
+        width: 100%; /* Ajustar el ancho al 100% */
+        padding: 10px; /* Añadir espacio entre los enlaces */
+    }
+}
+
+/*SEGUNDA PARTE*/
+.Presentacion {
+    background-color: black;
+    padding: 70px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.present{
+    color: #f3c242;
+    font-size: 36px;
+}
+.present2{
+    color: #fff;
+    font-size: 15px;
+    padding: 0px 50px;
+}
+.present3{
+    color: #fff;
+    font-size: 24px;
+}
+
+/*TERCERA PARTE*/
+.Prestigio{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #131313;
+    text-align: center;
+}
+.Prestigio img{
+    width: 30%;
+    max-width: 250px
+}
+
+/*CUARTA PARTE*/
+.Acercade,
+.Estudio {
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+.Acercade .texto,
+.Estudio .texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;
+    padding: 0px 200px;
+    gap: 10px;
+}
+/* Estilo para pantallas pequeñas (como celulares) */
+@media (max-width: 768px) {
+    .Acercade,
+    .Estudio {
+        flex-direction: column; /* Cambia a dirección de columna para que la imagen esté debajo del texto */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .Acercade img,
+    .Estudio img {
+        width: 90%; /* La imagen ocupará todo el ancho disponible */
+        height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+        margin-top: 20px; /* Añade un margen arriba a la imagen para separarla del texto */
+    }
+    .Acercade .texto,
+    .Estudio .texto {
+        padding: 50px;
+    }
+}
+
+/*QUINTA PARTE*/
+.Imagenes {
+    padding: 10px;
+    background-color: #131313;
+}
+.grupo-imagenes {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+}
+.imagen-texto {
+    flex: 1;
+    height: auto;
+    background-size: cover;
+    text-align: center;
+    font-size: 60px;
+    align-content: center;
+    color: #f3c242;
+}
+.img1 {
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/tunin-by-ear-1-min.jpg);
+}
+.img2 {
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/pentatonic-scales-min.jpg);
+}
+.img3 {
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/tuning-by-ear.jpg);
+}
+.img4 {
+    background-image: url(https://websitedemos.net/guitarist-02/wp-content/uploads/sites/880/2021/06/strumming-patterns-min.jpg);
+}
+/* Media query para pantallas de tamaño de celular */
+@media (max-width: 768px) {
+    .grupo-imagenes {
+        flex-direction: column; /* Cambia a dirección de columna */
+    }
+}
+
+/*SEXTA PARTE*/
+.Partitura {
+    background-color: #131313;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+.Partitura img {
+    width: 50%;
+}
+.Partitura .alineacion{
+    padding: 200px 200px;
+    background-color: #f3c242;
+}
+.Partitura .texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+}
+.parti1{
+    color: #131313;
+    font-size: 15px;
+}
+.parti2{
+    color: #131313;
+    font-size: 40px;
+}
+.Boton2{
+    background-color: #131313;
+    color: #f3c242;
+    display: inline-flex;
+    border-style: solid;
+    border: 2px 2px;
+    padding: 12px 30px;
+}
+@media (max-width: 768px) {
+    .Partitura {
+        flex-direction: column;
+    }
+    .Partitura .alineacion{
+        padding: 32px 20px 32px 32px;
+        
+    }
+    .Partitura img {
+        width: 100%;
+    }
+}
+
+/*SEPTIMA PARTE*/
+.Turismo{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #131313;
+}
+.Turismo .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.Tickets{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    margin: 0px 95px 30px;
+}
+.alinear{
+    align-content: center;
+}
+.turis1{
+    justify-content: center;
+    align-content: flex-end;
+    color: #f3c242;
+    font-size: 36px;
+}
+.turis2{
+    color: #fff;
+    font-size: 24px;
+    gap: 5px;
+}
+@media (max-width: 768px) {
+    .Tickets{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 30px 30px;
+    }
+}
+
+/*OCTAVA PARTE*/
+.Guitarra{
+    background-color: #131313;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Alinea verticalmente los elementos */
+    padding-bottom: 100px;
+}
+.Guitarra img {
+    width: 50%;
+}
+.Guitarra .texto{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    padding: 100px 0px;
+}
+.gita1{
+    color: #f3c242;;
+    font-size: 36px;
+}
+.gita2{
+    color: #fff;
+    font-size: 15px;
+}
+.Suscribirse{
+    display: flex;
+    justify-content: space-between;
+}
+.correo{
+    padding: 11.25px 50px;
+}
+.Boton2{
+    background-color: #131313;
+    color: #f3c242;
+    display: inline-flex;
+    border-style: solid;
+    border: 2px 2px;
+    padding: 12px 30px;
+}
+@media (max-width: 768px) {
+    .Guitarra {
+        flex-direction: column;
+    }
+    .Guitarra .alineacion{
+        padding: 32px 20px 32px 32px;
+    }
+    .Guitarra img {
+        width: 100%;
+    }
+}
+
+/*NOVENA PARTE*/
+.Musica{
+    background-color: #131313;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.division1{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 219px;
+}
+.Titulos{
+    color: #f3c242;
+    font-size: 21px;
+}
+
+/*DECIMA PARTE*/
+.contactos{
+    background-color: #131313;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactos svg{
+    width: 21px;
+}
+.contactos .menu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.contactos .menu a{
+    color: #f3c242;
+    font-size: 15px;
+}
+.contactos .redes-sociales2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    fill: #f3c242;
+}
+
+/*ULTIMA PARTE CRJO*/
+.copyright {
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80px;
+    position: relative; /* Agregamos posición relativa para poder posicionar la línea */
+}
+.copyright::before {
+    content: ""; /* Agregamos un pseudo-elemento para crear la línea */
+    position: absolute;
+    top: 0; /* Posicionamos la línea en la parte superior */
+    left: 0;
+    width: 100%; /* Ancho completo del div */
+    height: 1px; /* Grosor de la línea */
+    background-color: #f3c242; /* Color de la línea */
+}
+.copyright p {
+    padding: 30px;
+    font-size: 15px;
+    color: #fff;
+    margin: 0; /* Quitamos el margen para que no haya espacio extra */
+}
